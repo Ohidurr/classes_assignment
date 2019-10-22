@@ -120,3 +120,18 @@ class Movie {
 let borat = new Movie("Borat", 2006, "odd", "Sacha Baron Cohen", "as a man named Borat who was visiting America from Kazakhstan.")
 console.log(borat)
 console.log(borat.blurb());
+
+// QUESTION: 6
+class Vector {
+  constructor(x,y){
+    this.x = x;
+    this.y = y;
+  }
+  plus(vector){
+  let newVector =  ((this.x + vector.x)(this.y +vector.y))
+    return newVector
+    }
+  }
+var v1 = new Vector(1,2)
+var v2 = new Vector(4,3)
+console.log(v1.plus(v2));
